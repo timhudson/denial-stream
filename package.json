@@ -1,0 +1,32 @@
+{
+  "name": "denial-stream",
+  "version": "1.0.0",
+  "description": "Prevent unpiping on error in stream",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "author": "Tim Hudson <tim.hudson15@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "from2": "^1.3.0",
+    "standard": "^3.7.3",
+    "tape": "^4.0.0"
+  },
+  "keywords": [
+    "streams",
+    "pipe",
+    "unpipe"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timhudson/denial-stream.git"
+  },
+  "bugs": {
+    "url": "https://github.com/timhudson/denial-stream/issues"
+  },
+  "homepage": "https://github.com/timhudson/denial-stream"
+}
