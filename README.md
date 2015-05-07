@@ -1,6 +1,6 @@
 # denial-stream
 
-Prevent [unpiping on error](https://github.com/iojs/readable-stream/blob/214a7eb1719b524e78c7634eaee6bd408e6c532f/lib/_stream_readable.js#L565-L573) in stream
+Prevent [unpiping on error](http://git.io/vJjzS) in stream
 
 [![build status](http://img.shields.io/travis/timhudson/denial-stream.svg?style=flat)](http://travis-ci.org/timhudson/denial-stream)
 
@@ -41,8 +41,7 @@ Wraps a readable/writable stream in a new stream
 ### d.on('deniedError', function (err) {})
 
 The `deniedError` event is emitted when the passed in stream emits an error. `deniedStream`
-suppresses normal `error` events to prevent the stream from
-[unpiping](https://github.com/iojs/readable-stream/blob/214a7eb1719b524e78c7634eaee6bd408e6c532f/lib/_stream_readable.js#L565-L573)
+suppresses normal `error` events to prevent the stream from [unpiping](http://git.io/vJjzS)
 and instead forwards errors with the `deniedError` event.
 
 ## License
